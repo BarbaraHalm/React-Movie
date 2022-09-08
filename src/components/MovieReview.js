@@ -26,12 +26,13 @@ class MovieReview extends Component {
   render() {
     return (
       <div>
-        <h2 style={{color: 'green',textAlign:"Center", fontStyle:"italic",}}>Movie Reviews App</h2>
+        <h1 style={{color: 'green',textAlign:"Center", fontStyle:"italic",}}>Movie Reviews App</h1>
         {this.state.lifecycle.map((item, index) => {
           return (
-            //<Row md="12">
+            
               <Col md="6">
-            <div key={index} style={{background:"lightgrey", color: "black" ,outlineStyle:"dashed",borderBottomLeftRadius:"20px", marginLeft: "550px",
+            <div key={index} 
+            style={{background:"lightgrey", color: "black" ,outlineStyle:"dashed",borderBottomLeftRadius:"20px", marginLeft: "550px",
             borderTopRightRadius:"20px",height: "170px", width: "300px",fontSize:"15px",padding:"10px 20px", marginBottom: "15px",marginRight:"100px"}}>
               <h4> Byline:  {item.byline} </h4>
               <h4>  Critic Pick:  {item.critics_pick} </h4>
@@ -39,7 +40,7 @@ class MovieReview extends Component {
               <h4>  Headline :  {item.headline} </h4>
             </div>
             </Col>
-            //</Row>
+          
           );
         })}
       </div>
