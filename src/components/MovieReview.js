@@ -10,7 +10,7 @@ class MovieReview extends Component {
 
   componentDidMount() {
     fetch(
-      "https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=big&opening-date=1980-01-01:1990-01-01&api-key=aSJrHj6YrcaqGqnQKjz1UkWSpRhVhODT"
+      " https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=big&opening-date=1980-01-01:1990-01-01&api-key=2b7eC99WM7G1pk55FbA8AznKe11oOkf6"
     )
       .then((res) => {
         res.json().then((movieinfo) => {
